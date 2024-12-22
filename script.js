@@ -9,7 +9,7 @@ const slideshowContainer = document.querySelector('.slideshow');
 // Generar las imágenes dinámicamente
 for (let i = 1; i <= totalImages; i++) {
     const img = document.createElement('img');
-    img.src = `fotos laboratorio 24/${i}.jpg`; // Ruta de las imágenes
+    img.src = `fotos-laboratorio-24/${i}.jpg`; // Ruta de las imágenes
     img.alt = `Imagen ${i}`;
     if (i === 1) img.classList.add('active'); // La primera imagen comienza activa
     slideshowContainer.appendChild(img);
