@@ -27,10 +27,5 @@ function changeImage() {
     console.log(`Mostrando imagen ${currentIndex + 1}`); // Log para depuración
 }
 
-// Cambiar imagen cada 3 segundos (puedes ajustar el tiempo)
+// Cambiar imagen cada 3 segundos
 setInterval(changeImage, 3000);
-
-setInterval(changeImage, 3000);
-
-// Cambia de imagen cada 30 segundos
-setInterval(changeImage, 30000);
