@@ -1,23 +1,20 @@
-console.log('¡Carrusel de imágenes iniciado!');
+// Generar automáticamente la lista de imágenes enumeradas del 1 al 10
+const images = [];
+for (let i = 1; i <= 10; i++) {
+  images.push(`fotos-laboratorio-24/${i}.jpg`); // Ruta a las imágenes
+}
 
-// Selecciona todas las imágenes del carrusel
-const images = document.querySelectorAll('.slideshow img');
 let currentIndex = 0;
+const backgroundRotator = document.getElementById('background-rotator');
 
-// Verifica que se encontraron imágenes
-if (images.length === 0) {
-    console.error('No se encontraron imágenes en el contenedor .slideshow.');
-} else {
-    console.log(`Se encontraron ${images.length} imágenes en el carrusel.`);
+// Función para cambiar el fondo
+function changeBackground() {
+  backgroundRotator.style.backgroundImage = `url(${images[currentIndex]})`;
+  currentIndex = (currentIndex + 1) % images.length; // Ciclo infinito
 }
 
-// Función para cambiar de imagen
-function changeImage() {
-    images[currentIndex].classList.remove('active'); // Quita 'active' de la imagen actual
-    currentIndex = (currentIndex + 1) % images.length; // Avanza al siguiente índice
-    images[currentIndex].classList.add('active'); // Añade 'active' a la nueva imagen
-    console.log(`Mostrando imagen ${currentIndex + 1}`); // Log para depuración
-}
+// Cambiar la imagen cada 30 segundos
+setInterval(changeBackground, 30000);
 
-// Cambiar imagen cada 3 segundos
-setInterval(changeImage, 3000);
+// Inicializar con la primera imagen
+changeBackground();
