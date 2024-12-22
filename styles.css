@@ -60,7 +60,27 @@ nav ul li a:hover {
   text-align: center;
   color: #fff;
 }
+/* Contenedor para el fondo rotatorio */
+#background-rotator {
+  height: 100vh; /* Ocupa toda la pantalla */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff; /* Texto blanco */
+  background-size: cover; /* Ajusta la imagen para cubrir el área */
+  background-position: center;
+  transition: background-image 1s ease-in-out; /* Transición suave */
+}
 
+#background-rotator h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+#background-rotator p {
+  font-size: 1.2em;
+}
 .hero h1 {
   font-size: 2.5em;
   margin-bottom: 10px;
