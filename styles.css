@@ -1,18 +1,22 @@
-/* Estilo para el logo */
-.logo {
-    width: 150px; /* Tamaño adecuado del logo */
-    height: auto; /* Mantener proporción del logo */
-    margin-right: 20px; /* Espaciado entre el logo y el menú */
-}
-
 /* Barra de navegación */
 nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 10px 20px;
-    background-color: #333; /* Color de fondo */
+    background-color: #333; /* Fondo oscuro */
     color: white;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 200px; /* Ajusta el tamaño del logo */
+    height: auto;
+    margin-right: 20px; /* Espacio entre el logo y los enlaces */
 }
 
 nav ul {
@@ -35,4 +39,3 @@ nav ul li a {
 nav ul li a:hover {
     text-decoration: underline;
 }
-
