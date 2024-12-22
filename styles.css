@@ -23,7 +23,7 @@ header {
 }
 
 .logo h1 {
-  color: #000; /* Texto negro para "2R Geolab Ingenieros" */
+  color: #000 !important; /* Texto negro para "2R Geolab Ingenieros" */
   font-size: 24px;
   margin: 0;
 }
@@ -69,4 +69,3 @@ nav ul li a:hover {
 .hero p {
   font-size: 1.2em;
 }
-
