@@ -5,6 +5,12 @@
     margin: 0 auto;
     overflow: hidden;
 }
+/* Estilo para el logo */
+.logo {
+    width: 100px; /* Ajusta el tamaño del logo */
+    height: auto; /* Mantiene la proporción */
+    margin-right: 20px; /* Espaciado entre el logo y el menú */
+}
 
 .slideshow img {
     position: absolute;
