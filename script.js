@@ -1,23 +1,15 @@
-console.log('¡Bienvenido a 2R Geolab Ingenieros!');
+console.log('¡Carrusel de imágenes iniciado!');
 
-// Número total de imágenes
-const totalImages = 10;
-
-// Selecciona el contenedor del slideshow
-const slideshowContainer = document.querySelector('.slideshow');
-
-// Generar las imágenes dinámicamente
-for (let i = 1; i <= totalImages; i++) {
-    const img = document.createElement('img');
-    img.src = `fotos-laboratorio-24/${i}.jpg`; // Ruta de las imágenes
-    img.alt = `Imagen ${i}`;
-    if (i === 1) img.classList.add('active'); // La primera imagen comienza activa
-    slideshowContainer.appendChild(img);
-}
-
-// Selecciona todas las imágenes generadas
+// Selecciona todas las imágenes del carrusel
 const images = document.querySelectorAll('.slideshow img');
 let currentIndex = 0;
+
+// Verifica que se encontraron imágenes
+if (images.length === 0) {
+    console.error('No se encontraron imágenes en el contenedor .slideshow.');
+} else {
+    console.log(`Se encontraron ${images.length} imágenes en el carrusel.`);
+}
 
 // Función para cambiar de imagen
 function changeImage() {
@@ -29,3 +21,4 @@ function changeImage() {
 
 // Cambiar imagen cada 3 segundos
 setInterval(changeImage, 3000);
+
