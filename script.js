@@ -24,6 +24,28 @@ function changeImage() {
     currentIndex = (currentIndex + 1) % images.length; // Avanza al siguiente índice
     images[currentIndex].classList.add('active'); // Añade 'active' a la nueva imagen
 }
+console.log('¡Carrusel de imágenes iniciado!');
+
+// Seleccionar todas las imágenes del carrusel
+const images = document.querySelectorAll('.slideshow img');
+
+// Índice actual de la imagen
+let currentIndex = 0;
+
+// Función para cambiar de imagen
+function changeImage() {
+    // Eliminar la clase 'active' de la imagen actual
+    images[currentIndex].classList.remove('active');
+
+    // Mover al siguiente índice (circular)
+    currentIndex = (currentIndex + 1) % images.length;
+
+    // Añadir la clase 'active' a la nueva imagen
+    images[currentIndex].classList.add('active');
+}
+
+// Cambiar imagen cada 3 segundos (ajustable)
+setInterval(changeImage, 3000);
 
 // Cambia de imagen cada 30 segundos
 setInterval(changeImage, 30000);
