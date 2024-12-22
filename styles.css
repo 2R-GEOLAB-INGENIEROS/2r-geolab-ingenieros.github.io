@@ -1,25 +1,20 @@
-.slideshow {
-    position: relative;
-    width: 600px; /* Ajusta según el tamaño deseado */
-    height: 400px;
-    margin: 0 auto;
-    overflow: hidden;
-}
 /* Estilo para el logo */
 .logo {
-    width: 1200px; /* Ajusta el tamaño del logo */
-    height:800px ; /* Mantiene la proporción */
+    width: 150px; /* Tamaño adecuado del logo */
+    height: auto; /* Mantener proporción del logo */
     margin-right: 20px; /* Espaciado entre el logo y el menú */
 }
 
-/* Estilo para la barra de navegación */
+/* Barra de navegación */
 nav {
-    display: flex; /* Alinea los elementos en línea (logo y menú) */
-    align-items: center; /* Centra verticalmente el logo y los enlaces */
-    justify-content: space-between; /* Espacia el logo y el menú */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #333; /* Color de fondo */
+    color: white;
 }
 
-/* Opcional: Espaciado para el menú */
 nav ul {
     list-style: none;
     margin: 0;
@@ -39,21 +34,5 @@ nav ul li a {
 
 nav ul li a:hover {
     text-decoration: underline;
-}
-
-.slideshow img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-    z-index: 0; /* Asegura que las imágenes están en el fondo */
-}
-
-.slideshow img.active {
-    opacity: 1;
-    z-index: 1; /* La imagen activa se muestra por encima */
 }
 
