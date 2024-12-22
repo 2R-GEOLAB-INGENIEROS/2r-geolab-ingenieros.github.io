@@ -7,8 +7,8 @@
 }
 /* Estilo para el logo */
 .logo {
-    width: 100px; /* Ajusta el tamaño del logo */
-    height: auto; /* Mantiene la proporción */
+    width: 600px; /* Ajusta el tamaño del logo */
+    height:400px ; /* Mantiene la proporción */
     margin-right: 20px; /* Espaciado entre el logo y el menú */
 }
 
